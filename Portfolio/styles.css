@@ -1,0 +1,255 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+  }
+
+html{
+    background-color: rgb(30, 30, 30);
+}
+
+.scrollbar
+{
+	float: right;
+	overflow-y: scroll;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(1, 152, 117);
+}
+
+header {
+    position : fixed;
+    z-index: 2;
+    background-color: rgb(1, 152, 117);
+    width: 100%;
+    height: 10vh;
+    border-bottom: 3px white solid;
+    display : flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+.hnom {
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.liens a {
+    right : 0px;
+    text-decoration: none;
+    color : white;
+    padding : 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+header a {
+    color: white;
+    transition: color 0.5s;
+}
+
+header a:hover {
+    color: rgb(170, 170, 170);
+}
+
+main {
+    position : relative;
+    top : 10vh;
+}
+
+#hautdescription,
+#hautcompetences,
+#hautcontact,
+#hautreseaux {
+    height : 10vh;
+}
+.section {
+    margin-bottom: 30vh;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size : 40px;
+    color: rgb(1, 152, 117);
+}
+
+p {
+    font-size: 24px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#presentation {
+    height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, rgb(1, 152, 117) 0%, rgb(30, 30, 30)70%), center/cover;
+}
+
+#presentation h1 {
+    font-size: 54px;
+    color: white;
+}
+
+#presentation p {
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.titre_sect {
+    margin-left: 2vw;
+    margin-bottom: 10vh;
+}
+
+#description {
+    display: flex;
+    justify-content: space-between;
+}
+
+#description p {
+    margin-left: 2vw;
+    width: 60vw;
+}
+
+#description a {
+    color:white;
+    transition: color 0.3s;
+}
+
+#description a:hover {
+    color: rgb(1, 152, 117);
+}
+
+#photo_maxime{
+    height: 45vh;
+    margin-right: 10vw;
+    border: 3px solid rgb(1, 152, 117);
+    border-radius: 10px;
+    transition: transform 0.6s;
+}
+
+#photo_maxime:hover{
+    transform: scale(1.3);
+}
+
+#competences{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.comp {
+    border : 3px solid white;
+    color: white;
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    width: 25vw;
+    font-size: 22px;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.comp h1{
+    font-size: 30px;
+    color : rgb(1, 152, 117);
+    background-color: rgb(30, 30, 30);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.comp:hover,
+.comp:hover h1 {
+    background-color: rgb(1, 152, 117);
+    color: white;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    border : 1px solid rgb(240,240,240);
+    border-radius: 3px;
+    height: 5vh;
+    width : 26vw;
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.champ {
+    position: relative;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border: 3px solid rgb(1, 152, 117);
+}
+
+.champ:focus-within label{
+    color:rgb(1, 152, 117);
+}
+
+textarea {
+    height: 20vh;
+}
+
+button {
+    background-color: white;
+    color: rgb(1, 152, 117);
+    border: none;
+    border-radius: 3px;
+    height: 5vh;
+    width: 10vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(1, 152, 117);
+    color : white;
+}
+
+#reseaux {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.icone{
+    width : 4vw;
+    height : 4vh;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.icone a{
+    color :rgb(1, 152, 117);
+}
